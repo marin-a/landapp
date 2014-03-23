@@ -1,0 +1,27 @@
+{
+  "name": "landapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.5.0",
+    "jade": "*",
+    "stylus": "*"
+  },
+  "main": "web.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marin-a/landapp.git"
+  },
+  "keywords": [
+    "land"
+  ],
+  "author": "MA",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/marin-a/landapp/issues"
+  },
+  "homepage": "https://github.com/marin-a/landapp"
+}
