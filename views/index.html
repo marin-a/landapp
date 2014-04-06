@@ -7,22 +7,57 @@
     <title>Croatia Bilice Investment</title>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
  <!--   <link href="stylesheets/bootstrap.css" rel="stylesheet" media="screen"> -->
- <!--   <link href="stylesheets/mystyles.css" rel="stylesheet" media="screen"> -->
-    
+    <link href="stylesheets/mystyles.css" rel="stylesheet" media="screen">
 </head>
 <body>
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<!--    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ <!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> -->
+  <script src="javascripts/bootstrap.js"></script>
+  <script src="javascripts/myscript.js"></script>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="">Home</a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Current Investments</a></li>
+      <li><a href="#">Market Analysis</a></li>
+      <li><a data-toggle="modal" data-target="#myModal" href="#myModal">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- End Navigation -->
 
-<div class="container">
-  <h1 class="well text-center">Šibenik - Bilice</h1>
+ <div class="container-full">
+  <div class="intro-block">
+    <div class="row">
+        <div class="col-xs-9"><img src="https://dl.dropboxusercontent.com/u/56526108/landplot/Vodice.jpg" class="img-responsive"></div>
+        <div class="col-xs-3">
+          <ul class="list-group">
+            <li class="list-group-item"> <span class="badge">13.187 m²</span> Land Area:</li>
+            <li class="list-group-item"><span class="badge">For Sale</span> Type:</li>
+            <li class="list-group-item"><span class="badge">1.950.000 €</span>Price:</li>
+            <li class="list-group-item"><span class="badge">147 €</span>Price per m²:</li>
+          </ul>    
+        </div>
+    </div> <!-- End row -->
+</div> <!-- End intro-block -->
+</div> <!-- End container -->
 
+<div class="container tpad">
 <div class="row">
   <div class="col-md-8">
     <ul class="nav nav-tabs" id="myTab">
       <li class="active"><a href="#location" data-toggle="tab">Location</a></li>
       <li><a href="#description" data-toggle="tab">Description</a></li>
-      <li><a href="#video" data-toggle="tab">Video</a></li>
+      <li><a class="youtube" href="http://www.youtube.com/watch?v=n6A4PIQ2E0k" data-toggle="tab">Video</a></li>
     </ul>
 
   <div class="tab-content">
@@ -38,7 +73,8 @@
       <li>1800 meters to the beach</li>
       <li>On hillside overlooking the sea</li>
     </ul>
-  </div> <!-- div tab pain -->
+  </div> 
+  <!-- div tab pain -->
 
   <div class="tab-pane" id="description">
     <b>Description:</b>
@@ -53,14 +89,10 @@
       <li>Ideal for developing a medical centre, housing complex or tourist facility</li>
       <li>Building permissions and rezoning of the land are issued after obtaining a building permit</li>
     </ol>
-    </div> <!-- div tab pain -->
+    </div> 
 
-  <div class="tab-pane" id="video">
-    <br />
-    <iframe width="320" height="180" src="http://www.youtube.com/embed/n6A4PIQ2E0k" frameborder="0" allowfullscreen></iframe>
-  </div> <!-- div tab pain -->
-
-</div> <!-- div tab content -->
+    <!-- div tab pain -->
+ <!-- div tab content -->
 
 
 <script>
@@ -69,23 +101,8 @@
   })
 </script>
 </div>
-
-<div class="col-md-4">
-    <ul class="list-group">
-      <li class="list-group-item"> <span class="badge">13.187 m²</span> Land Area:</li>
-      <li class="list-group-item"><span class="badge">For Sale</span> Type:</li>
-      <li class="list-group-item"><span class="badge">1.950.000 €</span>Price:</li>
-      <li class="list-group-item"><span class="badge">147 €</span>Price per m²:</li>
-    </ul>    
-    <hr />
-</div> 
-</div>
-<div class="row">
-<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
-  Send Email
-</button>
-<br /> <br/>
 <!-- Modal -->
+
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -102,12 +119,17 @@
         </div>
       </div>
     </div>
+
 </div>
+</div> 
 </div>
-</div> <!-- div container -->
-</div>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<!--  <script src="javascripts/bootstrap.js"></script>
-  <script src="javascripts/myscript.js"></script> -->
+
+<script type="text/javascript">
+  $(function () {
+    $(".youtube").YouTubeModal({autoplay:0, width:640, height:480});
+  });
+</script>
+
+  <!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
 </body>
 </html>

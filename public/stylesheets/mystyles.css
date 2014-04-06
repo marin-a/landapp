@@ -1,0 +1,27 @@
+.intro-block{
+	padding: 100px;
+}
+
+.text-muted{
+	color: #e9e6df;
+	font-weight: 100px;
+}
+
+.container-full {
+  background-color: #e9e6df;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body{
+	background-color: #e9e6df;
+}
+
+.ftr{
+	background-color: #fff;
+	padding: 80px 0 60px 0;
+}
+
+.tpad {
+	padding: 0 0 60px 0;
+}
