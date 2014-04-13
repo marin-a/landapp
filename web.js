@@ -31,8 +31,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/current-investments', routes.current_investemnts);
-app.get('/market-analysis', routes.market_analysis);
+app.get('/information', routes.information);
+app.get('/about-croatia', routes.about_croatia);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
