@@ -7,10 +7,14 @@ exports.index = function(req, res){
   res.render('index',{"title":"Landplot"});
 };
 
-exports.information = function(req, res){
-  res.render('information',{"title":"Information"});
+exports.current_investments = function(req, res){
+  res.render('investments',{"title":"Current Investments"});
 };
 
-exports.about_croatia = function(req, res){
-  res.render('croatia',{"title":"About Croatia"});
+exports.market_analysis = function(req, res){
+  res.render('market',{"title":"Market Analysis"});
+};
+
+exports.dev_img = function(req, res){
+  res.render('dev',{"title":"Dev"});
 };
